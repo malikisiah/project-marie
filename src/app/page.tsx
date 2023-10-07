@@ -2,7 +2,9 @@ import { Button } from "@nextui-org/button";
 export default function Home() {
   return (
     <>
-      <Button color="primary">Click Me</Button>
+      <div className="min-h-screen text-center flex align-middle justify-center items-center  text-primary">
+        Hello World
+      </div>
     </>
   );
 }
