@@ -10,7 +10,7 @@ import { Button } from "@nextui-org/button";
 
 export default function Nav() {
   return (
-    <Navbar>
+    <Navbar isBordered className="border-secondary">
       <NavbarBrand>
         <p className="font-bold text-inherit">ACME</p>
       </NavbarBrand>
