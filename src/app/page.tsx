@@ -1,10 +1,15 @@
-import { Calendar } from "@/components/ui/calendar";
+"use client";
+import { Button } from "@/components/ui/button";
 
-export default function Home() {
+export default function Page() {
   return (
     <>
-      <div className="flex items-center align-middle justify-center min-h-screen">
-        <Calendar />
+      <h1 className="text-center pt-20 font-bold ">Hello World</h1>
+      <div className="pt-32 flex items-center justify-center align-middle gap-6">
+        <Button onClick={() => console.log("I've been clicked!")}>
+          Click Me
+        </Button>
+        <Button> No, Click Me</Button>
       </div>
     </>
   );
