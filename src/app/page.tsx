@@ -9,7 +9,7 @@ export default function Page() {
         <Button onClick={() => console.log("I've been clicked!")}>
           Click Me
         </Button>
-        <Button> No, Click Me</Button>
+        <Button variant={"secondary"}> No, Click Me</Button>
       </div>
     </>
   );
