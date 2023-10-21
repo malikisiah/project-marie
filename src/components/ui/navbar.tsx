@@ -4,16 +4,14 @@ import { useState } from "react";
 export default function Navbar() {
   const [state, setState] = useState(false);
 
-  // Replace javascript:void(0) path with your path
   const navigation = [
-    { title: "Customers", path: "javascript:void(0)" },
-    { title: "Careers", path: "javascript:void(0)" },
-    { title: "Guides", path: "javascript:void(0)" },
-    { title: "Partners", path: "javascript:void(0)" },
+    { title: "Link1", path: "/" },
+    { title: "Link2", path: "/" },
+    { title: "Link3", path: "/" },
   ];
 
   return (
-    <nav className="bg-background w-full sticky top-0 z-50 border-b-2 border-secondary">
+    <nav className="bg-background w-full sticky top-0 z-50 border-b-2 border-secondary md:static">
       <div className="items-center px-4 max-w-screen-xl mx-auto md:flex md:px-8">
         <div className="flex items-center justify-between py-3 md:py-5 md:block">
           <div className="w-[120px] h-[30px]"></div>
@@ -59,7 +57,7 @@ export default function Navbar() {
             state ? "block" : "hidden"
           }`}
         >
-          <ul className="justify-center items-center space-y-8 md:flex md:space-x-6 md:space-y-0">
+          <ul className="justify-center items-center space-y-8 md:flex md:space-x-12 md:space-y-0">
             {navigation.map((item, idx) => {
               return (
                 <li key={idx} className="text-primary hover:text-secondary">
@@ -71,7 +69,7 @@ export default function Navbar() {
         </div>
         <div className="hidden md:inline-block">
           <a
-            href="javascript:void(0)"
+            href="/"
             className="py-3 px-4 text-white bg-indigo-600 hover:bg-indigo-700 rounded-md shadow"
           >
             Get Started
