@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import { Button } from "./button";
 
 export default function Navbar() {
   const [state, setState] = useState(false);
@@ -68,12 +69,9 @@ export default function Navbar() {
           </ul>
         </div>
         <div className="hidden md:inline-block">
-          <a
-            href="/"
-            className="py-3 px-4 text-white bg-indigo-600 hover:bg-indigo-700 rounded-md shadow"
-          >
+          <Button className="" onClick={() => console.log("clicky!")}>
             Get Started
-          </a>
+          </Button>
         </div>
       </div>
     </nav>
